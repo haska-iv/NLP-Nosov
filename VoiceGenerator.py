@@ -10,10 +10,10 @@ import g4f
 
 class VoiceGenerator:
     def __init__(self):
-        self.API_KEY = 'e8674ea3cacda897ad20e57e6786fa26'
+        self.API_KEY = 'PUT HERE YOUR API KEY'
         set_api_key(self.API_KEY) 
         self.voices = voices()
-        self.voice = Voice.from_id('8AsiUYrhphlnBNuggBCK')
+        self.voice = Voice.from_id('PUT HERE YOUR VOICE ID')
         self.voice.settings.stability = 0.1
         # список тем лучше предоставить в строковом формате, чтобы избежать лишний код по переводу списка в строку
         self.topics = 'Погода, Политика, Спорт, \
